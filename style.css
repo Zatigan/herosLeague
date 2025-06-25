@@ -1,0 +1,364 @@
+:root {
+  --main-color: #8781d3;
+  --secondary-color: #a29bfe;
+  --text-color: #fff;
+  background-color: #000;
+  color: var(--text-color);
+  font-family: "Satoshi", sans-serif;
+  margin: 0 auto;
+}
+
+/* ========== Eléments généraux de la page ========== */
+
+/* ======= Header page ======= */
+h2 {
+  font-size: xx-large;
+  font-weight: 900;
+}
+
+h2 > span {
+  color: var(--main-color);
+}
+
+header {
+  display: grid;
+  margin: 0 auto;
+}
+
+ul > li {
+  list-style-type: none;
+}
+
+.banner {
+  background: radial-gradient(transparent 34%, black),
+    url("/ressources/images/hero-banner.png");
+  background-position: center;
+  border-radius: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  margin-top: 40px;
+}
+
+/* ======= "Nos supers services" ======= */
+
+section > article {
+  border-radius: 25px;
+}
+
+.services {
+  display: grid;
+}
+
+.services > article {
+  border: 1px solid var(--main-color);
+}
+
+.services > article > h3 {
+  color: var(--main-color);
+  font-size: xx-large;
+  font-weight: 900;
+}
+
+.services > article > p:first-of-type {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+button {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+button:hover {
+  background-color: var(--main-color);
+}
+
+.services__disclaimer {
+  margin: 25px auto;
+  font-size: small;
+  font-style: italic;
+}
+
+/* ======= "Nos Supers Héros" ======= */
+
+.heroes {
+  display: grid;
+}
+
+h3 {
+  font-weight: 900;
+  font-size: x-large;
+}
+
+.heroes > article {
+  display: grid;
+  align-content: space-between;
+  height: 100vh;
+}
+
+.hero__hover {
+  opacity: 0;
+  background-color: #8681d3a2;
+  color: var(--text-color);
+  text-align: center;
+  font-style: italic;
+  border-radius: 20px 20px 0px 0px;
+  height: fit-content;
+  padding: 25px;
+}
+
+.heros:hover .hero__hover {
+  opacity: 1;
+  transition: 0.65s;
+}
+
+.heros > div {
+  background-color: #0000003d;
+  border-radius: 0px 0px 20px 20px;
+  text-align: center;
+  font-size: medium;
+  font-weight: 400;
+  height: 100%;
+  padding: 10%;
+}
+
+.heros > div > p {
+  width: 102%;
+}
+
+.heroes-cat {
+  background-image: url("/ressources/images/catastrophic.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+
+.heroes-carotte {
+  background-image: url("/ressources/images/carotte-woman.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+}
+
+.heroes-ultra {
+  background-image: url("/ressources/images/ultraquenarde.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+}
+
+.heroes-poulpy {
+  background-image: url("/ressources/images/poulpy.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+}
+
+.heroes-orang {
+  background-image: url("/ressources/images/oran-wu-tang-clan.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+}
+
+.heroes-superime {
+  background-image: url("/ressources/images/superime.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+}
+
+.heroes > button {
+  text-transform: uppercase;
+  font-weight: 900;
+  width: 200px;
+  margin: 35px auto;
+}
+
+/* ======= "Témoignages" ======= */
+
+.testimonies > article {
+  background-color: var(--main-color);
+  padding-bottom: 20px;
+}
+
+.testimonies > article p:first-of-type {
+  font-weight: 800;
+  font-size: larger;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.testimonies > article p:last-child {
+  font-style: italic;
+  text-align: center;
+  padding: 0 10px;
+}
+
+/* ======= "Contact" ======= */
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__list-element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form__list-element > label {
+  font-weight: 800;
+  font-size: large;
+  margin: 20px 0 10px 0px;
+}
+
+.form__list-element > input {
+  background-color: #4d4d4d;
+  border: none;
+  border-radius: 20px;
+  width: 90%;
+  height: 60px;
+}
+
+select {
+  background-color: #4d4d4d;
+  border: none;
+  border-radius: 20px;
+  width: 90%;
+  height: 60px;
+  color: #fff;
+  padding-left: 15px;
+  font-weight: 800;
+  font-size: large;
+}
+
+textarea {
+  background-color: #4d4d4d;
+  border: none;
+  border-radius: 20px;
+  resize: none;
+  width: 90%;
+  height: 250px;
+  color: #fff;
+}
+
+form > button {
+  margin: 60px 0;
+  padding: 15px 40px;
+  text-transform: uppercase;
+  font-weight: 800;
+  align-self: center;
+}
+
+/* ======= "Focus du Formulaire" ======= */
+
+input:focus {
+  border: 3px solid var(--secondary-color);
+  outline: none;
+}
+
+textarea:focus {
+  border: 3px solid var(--secondary-color);
+  outline: none;
+}
+
+select:focus {
+  border: 3px solid var(--secondary-color);
+  outline: none;
+}
+
+/* ======= "Footer" ======= */
+
+footer {
+  background-image: linear-gradient(45deg, #9a8efe 0%, #7f62ff);
+  color: var(--text-color);
+}
+
+.footer-nav > li > a {
+  font-weight: 400;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  :root {
+    margin: 20px;
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+  h2 {
+    margin: 50px auto 20px auto;
+    text-align: center;
+  }
+
+  .services {
+    grid-template-columns: 100%;
+    gap: 20px;
+  }
+
+  .services > article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 17px;
+  }
+
+  .services > article > button {
+    margin: 10% 0;
+    font-weight: 900;
+    font-size: larger;
+  }
+
+  .heroes > article {
+    height: 41vh;
+    margin: 15px 0;
+  }
+
+  .testimonies > article {
+    margin: 30px 0;
+  }
+
+  .testimonies > article > img {
+    border-radius: 8% 8% 70% 70% / 8% 8% 75% 75%;
+    border: 10px #a29bfe solid;
+    margin-bottom: 50px;
+  }
+
+  .testimonies > article > p {
+    margin: 20px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 82% 200% 0% 30% / 20% 45% 0% 0%;
+    padding: 40px 0;
+  }
+
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px auto 50px auto;
+  }
+
+  .footer-nav li {
+    margin: 12px 0;
+  }
+}
