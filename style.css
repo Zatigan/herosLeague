@@ -6,27 +6,57 @@
   color: var(--text-color);
   font-family: "Satoshi", sans-serif;
   margin: 0 auto;
+  padding: 25px;
 }
 
 /* ========== Eléments généraux de la page ========== */
 
 /* ======= Header page ======= */
-h2 {
-  font-size: xx-large;
-  font-weight: 900;
-}
-
-h2 > span {
-  color: var(--main-color);
-}
 
 header {
   display: grid;
   margin: 0 auto;
 }
 
-ul > li {
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+h2 {
+  font-size: xx-large;
+  font-weight: 900;
+  margin: 50px auto 20px auto;
+  text-align: center;
+}
+
+.dash {
+  color: var(--main-color);
+  align-items: center;
+  margin: 0 30px;
+  font-weight: 400;
+}
+
+.supers {
+  color: var(--main-color);
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header-nav > li {
   list-style-type: none;
+  margin-right: 15px;
+}
+
+.header-nav > li > a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 700;
 }
 
 .banner {
@@ -44,6 +74,10 @@ ul > li {
   margin-top: 40px;
 }
 
+.banner-div {
+  font-weight: larger;
+}
+
 /* ======= "Nos supers services" ======= */
 
 section > article {
@@ -56,6 +90,12 @@ section > article {
 
 .services > article {
   border: 1px solid var(--main-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 17px;
 }
 
 .services > article > h3 {
@@ -290,32 +330,62 @@ footer {
   text-decoration: none;
 }
 
+@media screen and (min-width: 1024px) {
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .nav {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+
+  .nav > h2 {
+    margin-bottom: 25px;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  section > h2 {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+  }
+
+  section > article:nth-child(6) {
+    grid-column: 1 / -1;
+  }
+
+  .heroes > button {
+    grid-column: 1 / -1;
+  }
+
+  .testimony-4 {
+    grid-column: 3 / 2;
+  }
+}
+
 @media screen and (max-width: 767px) {
   :root {
     margin: 20px;
+    padding: 0;
   }
 
   .header-nav {
     display: none;
   }
 
-  h2 {
-    margin: 50px auto 20px auto;
-    text-align: center;
+  .dash {
+    display: none;
   }
 
   .services {
     grid-template-columns: 100%;
     gap: 20px;
-  }
-
-  .services > article {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 17px;
   }
 
   .services > article > button {

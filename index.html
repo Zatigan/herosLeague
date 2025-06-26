@@ -15,16 +15,18 @@
 
   <body>
     <header>
-      <h2>Heros League</h2>
-      <ul class="header-nav">
-        <li><a href="">Services</a></li>
-        <li>Nos Héros</li>
-        <li>Témoignages</li>
-        <li>Sauvez-moi !</li>
-      </ul>
+      <div class="nav">
+        <h2>Heros League</h2>
+        <ul class="header-nav">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#heroes">Nos Héros</a></li>
+          <li><a href="#testimonies">Témoignages</a></li>
+          <li><a href="#save">Sauvez-moi !</a></li>
+        </ul>
+      </div>
       <div class="banner">
-        <div>
-          <h1>Heros League</h1>
+        <div class="div-banner">
+          <h1 class="banner-title">Heros League</h1>
           <p>
             Des gens un peu spéciaux, pour des problèmes pas tout à fait normaux
           </p>
@@ -33,7 +35,10 @@
     </header>
 
     <section class="services" id="services">
-      <h2>Nos <span>supers</span> Services</h2>
+      <h2>
+        <span class="dash">–</span>Nos
+        <span class="supers">supers</span> Services<span class="dash">–</span>
+      </h2>
 
       <article>
         <h3>Super Déménagement</h3>
@@ -93,7 +98,10 @@
     </section>
 
     <section class="heroes" id="heroes">
-      <h2>Nos <span>Supers</span> Héros</h2>
+      <h2>
+        <span class="dash">–</span>Nos <span class="supers">Supers</span> Héros
+        <span class="dash">–</span>
+      </h2>
 
       <article class="heroes-cat heros">
         <p class="hero__hover">
@@ -173,7 +181,10 @@
     </section>
 
     <section class="testimonies" id="testimonies">
-      <h2>Les Témoignages de nos clients</h2>
+      <h2>
+        <span class="dash">–</span>Les Témoignages de nos clients
+        <span class="dash">–</span>
+      </h2>
 
       <article class="testimony-1">
         <img
@@ -225,7 +236,9 @@
     </section>
 
     <section class="save-me" id="save">
-      <h2>Sauvez-moi !</h2>
+      <h2>
+        <span class="dash">–</span>Sauvez-moi !<span class="dash">–</span>
+      </h2>
 
       <form action="/save-me" method="post">
         <ul>
