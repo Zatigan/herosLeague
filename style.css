@@ -344,7 +344,7 @@ footer {
     margin-bottom: 25px;
   }
 
-  section {
+  .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -356,16 +356,12 @@ footer {
     grid-row: 1 / -1;
   }
 
-  section > article:nth-child(6) {
+  article[class="last-element"] {
     grid-column: 1 / -1;
   }
 
   .heroes > button {
     grid-column: 1 / -1;
-  }
-
-  .testimony-4 {
-    grid-column: 3 / 2;
   }
 }
 
