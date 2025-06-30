@@ -27,7 +27,6 @@ header {
 h2 {
   font-size: xx-large;
   font-weight: 900;
-  margin: 50px auto 20px auto;
   text-align: center;
 }
 
@@ -64,7 +63,7 @@ h2 {
     url("/images/hero-banner.png");
   background-position: center;
   border-radius: 20px;
-  height: 100vh;
+  height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -140,7 +139,7 @@ h3 {
 .heroes > article {
   display: grid;
   align-content: space-between;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .hero__hover {
@@ -179,6 +178,7 @@ h3 {
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 20px;
+  height: 30vh;
 }
 
 .heroes-carotte {
@@ -186,13 +186,15 @@ h3 {
   background-size: cover;
   background-position: center;
   border-radius: 20px;
+  height: 30vh;
 }
 
 .heroes-ultra {
   background-image: url("/images/ultraquenarde.png");
   background-size: cover;
-  background-position: center;
+  background-position: top;
   border-radius: 20px;
+  height: 30vh;
 }
 
 .heroes-poulpy {
@@ -200,6 +202,7 @@ h3 {
   background-size: cover;
   background-position: center;
   border-radius: 20px;
+  height: 30vh;
 }
 
 .heroes-orang {
@@ -207,13 +210,15 @@ h3 {
   background-size: cover;
   background-position: center;
   border-radius: 20px;
+  height: 30vh;
 }
 
 .heroes-superime {
   background-image: url("/images/superime.png");
   background-size: cover;
-  background-position: center;
+  background-position: right;
   border-radius: 20px;
+  height: 30vh;
 }
 
 .heroes > button {
@@ -230,17 +235,22 @@ h3 {
   padding-bottom: 20px;
 }
 
+.testimonies > article > img {
+  border: 10px #a29bfe solid;
+  margin-bottom: 50px;
+}
+
 .testimonies > article p:first-of-type {
   font-weight: 800;
   font-size: larger;
   text-align: center;
-  margin: 0 auto;
+  padding-top: 50px;
 }
 
 .testimonies > article p:last-child {
   font-style: italic;
   text-align: center;
-  padding: 0 10px;
+  padding: 0 45px;
 }
 
 /* ======= "Contact" ======= */
@@ -354,6 +364,7 @@ footer {
   section > h2 {
     grid-column: 1 / -1;
     grid-row: 1 / -1;
+    margin: 100px 0;
   }
 
   article[class="last-element"] {
@@ -362,6 +373,20 @@ footer {
 
   .heroes > button {
     grid-column: 1 / -1;
+  }
+
+  .testimonies > article {
+    border-radius: 45% 45% 6% 6% / 45% 45% 6% 6%;
+    width: 360px;
+    margin: 0 auto;
+  }
+
+  .testimonies > article > img {
+    border-radius: 50%;
+    width: 360px;
+    height: 34vh;
+    object-fit: cover;
+    margin: 0 auto;
   }
 }
 
@@ -391,7 +416,7 @@ footer {
   }
 
   .heroes > article {
-    height: 41vh;
+    /* height: 41vh; */
     margin: 15px 0;
   }
 
@@ -401,8 +426,6 @@ footer {
 
   .testimonies > article > img {
     border-radius: 8% 8% 70% 70% / 8% 8% 75% 75%;
-    border: 10px #a29bfe solid;
-    margin-bottom: 50px;
   }
 
   .testimonies > article > p {
