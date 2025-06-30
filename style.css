@@ -61,7 +61,7 @@ h2 {
 
 .banner {
   background: radial-gradient(transparent 34%, black),
-    url("/ressources/images/hero-banner.png");
+    url("/images/hero-banner.png");
   background-position: center;
   border-radius: 20px;
   height: 100vh;
@@ -174,7 +174,7 @@ h3 {
 }
 
 .heroes-cat {
-  background-image: url("/ressources/images/catastrophic.png");
+  background-image: url("/images/catastrophic.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -182,35 +182,35 @@ h3 {
 }
 
 .heroes-carotte {
-  background-image: url("/ressources/images/carotte-woman.png");
+  background-image: url("/images/carotte-woman.png");
   background-size: cover;
   background-position: center;
   border-radius: 20px;
 }
 
 .heroes-ultra {
-  background-image: url("/ressources/images/ultraquenarde.png");
+  background-image: url("/images/ultraquenarde.png");
   background-size: cover;
   background-position: center;
   border-radius: 20px;
 }
 
 .heroes-poulpy {
-  background-image: url("/ressources/images/poulpy.png");
+  background-image: url("/images/poulpy.png");
   background-size: cover;
   background-position: center;
   border-radius: 20px;
 }
 
 .heroes-orang {
-  background-image: url("/ressources/images/oran-wu-tang-clan.png");
+  background-image: url("/images/oran-wu-tang-clan.png");
   background-size: cover;
   background-position: center;
   border-radius: 20px;
 }
 
 .heroes-superime {
-  background-image: url("/ressources/images/superime.png");
+  background-image: url("/images/superime.png");
   background-size: cover;
   background-position: center;
   border-radius: 20px;
