@@ -259,6 +259,13 @@ h3 {
 
 /* ======= "Contact" ======= */
 
+.save-me {
+  width: 85vw;
+  min-width: 200px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
 form {
   display: flex;
   flex-direction: column;
