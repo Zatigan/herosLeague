@@ -62,20 +62,24 @@ h2 {
   background: radial-gradient(transparent 34%, black),
     url("/images/hero-banner.png");
   background-position: center;
+  background-size: cover;
   border-radius: 20px;
-  height: 82vh;
+  height: 59vh;
+  max-height: 59vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 0 20px;
-  margin-top: 40px;
+  margin: 40px 0 70px 0;
 }
 
 .banner-div {
   font-weight: larger;
 }
+
+/* ======= "Éléments généraux de sections" ======= */
 
 /* ======= "Nos supers services" ======= */
 
@@ -231,7 +235,7 @@ h3 {
 /* ======= "Témoignages" ======= */
 
 .testimonies > article {
-  background-image: linear-gradient(45deg, #b5afe5 0%, #7f62ff);
+  background-image: linear-gradient(45deg, #aaa5d5 0%, #7f62ff);
   padding-bottom: 20px;
 }
 
@@ -282,12 +286,11 @@ form {
 
 select {
   background-color: #4d4d4d;
-  border: none;
+  border: 15px solid #4d4d4d;
   border-radius: 20px;
   width: 90%;
   height: 60px;
   color: #fff;
-  padding-left: 15px;
   font-weight: 800;
   font-size: large;
 }
@@ -330,7 +333,9 @@ select:focus {
 /* ======= "Footer" ======= */
 
 footer {
-  background-image: linear-gradient(45deg, #b5afe5 0%, #7f62ff);
+  background-image: linear-gradient(45deg, #aaa5d5 0%, #7f62ff);
+  border-radius: 82% 200% 0% 30% / 20% 45% 0% 0%;
+  padding: 40px 0;
   color: var(--text-color);
 }
 
@@ -371,6 +376,16 @@ footer {
     margin: 100px 0;
   }
 
+  h3 {
+    margin: 10px 0;
+  }
+
+  article > button {
+    margin: 30px 0;
+    font-weight: 700;
+    font-size: x-large;
+  }
+
   article[class="last-element"] {
     grid-column: 1 / -1;
   }
@@ -391,6 +406,23 @@ footer {
     height: 34vh;
     object-fit: cover;
     margin: 0 auto;
+  }
+
+  footer {
+    align-items: center;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+  }
+
+  footer > ul > li {
+    display: inline;
+    margin-right: 15px;
+    font-weight: 300;
+  }
+
+  footer > p {
+    margin-top: 40px;
   }
 }
 
@@ -452,8 +484,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 82% 200% 0% 30% / 20% 45% 0% 0%;
-    padding: 40px 0;
   }
 
   .footer-nav {
