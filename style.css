@@ -387,7 +387,7 @@ footer > p {
   .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     gap: 20px;
   }
 
@@ -415,6 +415,10 @@ footer > p {
     grid-column: 1 / -1;
   }
 
+  .heros > div {
+    padding: 15px 25px;
+  }
+
   .testimonies > article {
     border-radius: 45% 45% 6% 6% / 45% 45% 6% 6%;
     width: 360px;
@@ -424,7 +428,7 @@ footer > p {
   .testimonies > article > img {
     border-radius: 50%;
     width: 360px;
-    height: 25vh;
+    height: 43vh;
     object-fit: cover;
     margin: 0 auto;
   }
