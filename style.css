@@ -469,6 +469,12 @@ footer > p {
 
   .heroes > article {
     margin: 15px 0;
+    height: 33vh;
+  }
+
+  .heros > div {
+    height: 100%;
+    padding: 15px 40px;
   }
 
   .testimonies > article {
