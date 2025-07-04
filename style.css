@@ -9,6 +9,10 @@
   padding: 25px;
 }
 
+TO DO
+Virer le maximum de balise pour remplacer par des classes
+Transposer les ID dans le tablet et mobile
+
 /* ========== Eléments généraux de la page ========== */
 
 /* ======= Header page ======= */
@@ -112,14 +116,18 @@ section > article {
   text-transform: uppercase;
 }
 
-button {
+.service-btn,
+.form-btn,
+.heros-btn {
   background-color: var(--secondary-color);
   color: var(--text-color);
   border-radius: 20px;
   padding: 1rem;
 }
 
-button:hover {
+.service-btn:hover,
+.form-btn:hover,
+.heros-btn:hover {
   background-color: var(--main-color);
 }
 
@@ -131,13 +139,21 @@ button:hover {
 
 /* ======= "Nos Supers Héros" ======= */
 
-.heroes {
+#heroes {
   display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
 }
 
 h3 {
   font-weight: 900;
   font-size: x-large;
+}
+
+.heroes > h2 {
+  grid-row: 1/2;
+  grid-column: 1 / -1;
 }
 
 .heroes > article {
@@ -181,6 +197,8 @@ h3 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  grid-row: 2;
+  grid-column: 1 / 2;
   border-radius: 20px;
   height: 30vh;
 }
@@ -189,6 +207,8 @@ h3 {
   background-image: url("/images/carotte-woman.png");
   background-size: cover;
   background-position: center;
+  grid-row: 2;
+  grid-column: 2 / 3;
   border-radius: 20px;
   height: 30vh;
 }
@@ -197,6 +217,8 @@ h3 {
   background-image: url("/images/ultraquenarde.png");
   background-size: cover;
   background-position: top;
+  grid-row: 2;
+  grid-column: 3 / 4;
   border-radius: 20px;
   height: 30vh;
 }
@@ -205,6 +227,8 @@ h3 {
   background-image: url("/images/poulpy.png");
   background-size: cover;
   background-position: center;
+  grid-row: 3;
+  grid-column: 1 / 2;
   border-radius: 20px;
   height: 30vh;
 }
@@ -213,6 +237,8 @@ h3 {
   background-image: url("/images/oran-wu-tang-clan.png");
   background-size: cover;
   background-position: center;
+  grid-row: 3;
+  grid-column: 2 / 3;
   border-radius: 20px;
   height: 30vh;
 }
@@ -221,6 +247,8 @@ h3 {
   background-image: url("/images/superime.png");
   background-size: cover;
   background-position: right;
+  grid-row: 3;
+  grid-column: 3 / 4;
   border-radius: 20px;
   height: 30vh;
 }
@@ -230,20 +258,23 @@ h3 {
   font-weight: 900;
   width: 200px;
   margin: 35px auto;
+  grid-row: 4;
+  grid-column: 1 / -1;
 }
 
 /* ======= "Témoignages" ======= */
 
-/* #testimonies {
+#testimonies {
   display: grid;
-  grid-template-rows: repeat (2, 1fr);
+  /* grid-template-rows: repeat (2, 1fr); */
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
+  justify-content: center;
 }
 
 .testimonies > h2 {
-  grid-row: -1 / 1;
-  grid-column: 1 / 1;
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
 }
 
 .testimony-1 {
@@ -261,16 +292,24 @@ h3 {
 .testimony-4 {
   grid-row: 2 / 3;
   grid-column: 4 / 5;
-} */
+}
 
 .testimonies > article {
   background-image: linear-gradient(45deg, #aaa5d5 0%, #7f62ff);
+  border-radius: 45% 45% 6% 6% / 45% 45% 6% 6%;
+  width: 360px;
+  margin: 0 auto;
   padding-bottom: 20px;
 }
 
 .testimonies > article > img {
   border: 10px #a29bfe solid;
   margin-bottom: 50px;
+  border-radius: 50%;
+  width: 360px;
+  height: 43vh;
+  object-fit: cover;
+  margin: 0 auto;
 }
 
 .testimonies > article p:first-of-type {
@@ -428,6 +467,45 @@ footer > p {
     height: 33vh;
   }
 
+  .heroes-cat {
+    grid-row: 2 / 3;
+    grid-column: 1/ 2;
+  }
+
+  .heroes-carotte {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+  }
+
+  .heroes-ultra {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+  }
+
+  .heroes-poulpy {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+  }
+
+  .heroes-orang {
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+  }
+
+  .heroes-superime {
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+  }
+
+  .heroes > button {
+    grid-row: 5;
+    grid-column: 1 / -1;
+  }
+
+  .heros > div {
+    padding: 15px 25px;
+  }
+
   #testimonies {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -455,6 +533,12 @@ footer > p {
     grid-column: 2 / 3;
   }
 
+  .testimonies > h2 {
+    /* grid-row: 1 / 2; */
+    grid-column: 1 / -1;
+    margin: 75px 0;
+  }
+
   section > h2 {
     /* grid-row: 1 / 2; */
     grid-column: 1 / -1;
@@ -465,22 +549,15 @@ footer > p {
     margin: 10px 0;
   }
 
-  article > button {
+  .service-btn,
+  .form-btn,
+  .heros-btn {
     margin: 30px 0;
     font-weight: 700;
-    font-size: x-large;
   }
 
   article[class="last-element"] {
     grid-column: 1 / -1;
-  }
-
-  .heroes > button {
-    grid-column: 1 / -1;
-  }
-
-  .heros > div {
-    padding: 15px 25px;
   }
 
   .testimonies > article {
@@ -535,6 +612,11 @@ footer > p {
     font-size: larger;
   }
 
+  #heroes {
+    display: flex;
+    flex-direction: column;
+  }
+
   .heroes > article {
     margin: 15px 0;
     height: 33vh;
@@ -543,6 +625,12 @@ footer > p {
   .heros > div {
     height: 100%;
     padding: 15px 40px;
+  }
+
+  #testimonies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .testimonies > article {
