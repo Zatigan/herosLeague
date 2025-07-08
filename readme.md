@@ -1,63 +1,51 @@
-# Heros League a besoin toi !
+# Heros League
 
-**Heros League&trade;** est une société de mise à disposition de **super-héros** pour des situations d'urgence en tout genre. Nous avons besoin de toi pour créer un site web qui permettra de présenter nos différents services et de pouvoir lancer un appel à l'aide.
+Heros league est un projet réalisé durant ma formation à l'école O'Clock. Cet exercice a pour but de pratiquer le HTML et le CSS vanilla.
 
-Pour l'instant ce n'est qu'**une page d'accueil**, mais on te recontactera rapidement pour **ajouter de nouvelles fonctionnalités.**
+## ![Logo HTML 5](image-2.png) HTML 5
 
-**Prêt à servir la League ?** :muscle: :rocket:
+### Appel à une police tiers
 
-Tu trouveras dans les **ressources** tout ce dont tu as besoin pour réaliser ce projet.
+Pour donner un peu de personnalité au site, l'utilisation d'une police externe était requise. J'ai choisi la police Satoshi, disponible depuis le site [fontshare](https://www.fontshare.com).
 
-## Consignes
+### Choix des balises pertinentes pour rendre la structure claire et accessible
 
-- La police d'écriture est celle-ci : [Satoshi](https://www.fontshare.com/?q=Satoshi)
-  - Le designer nous a dit qu'il y avait pas mal de graisses différentes à prendre
-- Pour les couleurs, on ne les a plus sous la main, mais on imagine que tu trouveras un moyen de les récupérer :wink:
-- N'hésite pas à prendre la maquette de la home et la glisser / déposer dans ton navigateur pour la voir comme si c'était le site web (appuie sur la maquette dans le navigateur pour la zoomer à la largeur de l'écran)
-- Les liens du menus doivent être des ancres qui pointent vers la section correspondante
-- La première section avec la grande image doit prendre tout l'espace disponible dans la hauteur de l'écran (et ne pas dépasser !)
-- Au survol d'un héro, un texte supplémentaire doit apparaître par dessus l'image (voir maquette). Petit détail, le texte doit apparaître par le haut de l'image
-- Il y a un bouton pour voir plus de héros mais pour le moment il n'y a pas de page de prévue par le designer, donc renseigne "#" en lien, on verra plus tard !
-- Sinon tu es libre de faire comme tu veux, tant que ça ressemble à la maquette ! :smile:
+Une structure pertinente et claire offre plusieurs avantages parmi lequels :
 
-## Maquette globale
+- Un meilleur référencement du site web,
+- Facilite l'accessibilité du site y compris pour les personnes en situation de handicap ayant recours à un lecteur d'écran.
 
-![Home](./ressources/home.png)
+### Configuration d'un formulaire
 
-### Header
+L'utilisation d'un formulaire avec ces labels, input, select, etc est un incontournable dans le web moderne.
 
-Le menu doit passer par dessus le contenu au scroll.
+## ![alt text](image-3.png) CSS 3
 
-![Header](./ressources/header.png)
+### Utilisation d'un reset CSS
 
-## Hovers
+Cela m'a permis de m'affranchir des configurations implicites des navigateurs et ainsi de pouvoir gérer au mieux mon rendu.
 
-### Menu
+### Gestion du menu
 
-![Menu](./ressources/menu-hover.png)
+Le menu doit apparaître dans le format desktop et tablette par-dessus le contenu de la page. Ici, l'utilisation de la position: sticky et d'un top de quelques pixels permet d'atteindre l'objectif.
 
-### Héros
+### Configurer les hover
 
-![Héros](./ressources/hover-hero.png)
+#### Hover simple
 
-### Bouton
+Ici c'est un hover sur le bouton qui entraine le changement de la tête de la couleur de fond.
 
-![Bouton](./ressources/button-hover.png)
+#### Hover complexe
 
-### Footer menu 
+Dans cet exercice, l'objectif est de faire apparaître un texte supplémentaire sur la vignette des héros. Ce texte apparaît par le haut de l'image.
 
-![Footer menu](./ressources/footer-menu-hover.png)
+### Responsive
 
-## Input Focus Outline
+#### Utilisation de media queries (mobile, tablette et desktop)
 
-![Input Focus Outline](./ressources/input-focus.png)
+Afin de rendre le site lisible sur les différents appareils, 3 media queries ont été utilisés pour convenir aux différents formats d'écrans : une pour les écrans de moins de 767px (orienté mobile), une pour les écrans de 768 à 1023px (orienté tablette) et la dernière pour le format desktop.
 
-## Responsive
+#### Utilisation de grid et flexbox
 
-### Tablette
-
-![Tablette](./ressources/home-tablet.png)
-
-### Mobile
-
-![Mobile](./ressources/home-phone.png)
+La flexbox a été utile pour la mise en forme des menus et l'organisation en colonne sur le format mobile.
+L'utilisation de la grid a permis une mise en page originale pour la section services au format desktop, et adaptative au format d'écran en cours pour garder une qualité de lecture au plus juste.
