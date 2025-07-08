@@ -2,7 +2,7 @@
 
 Heros league est un projet réalisé durant ma formation à l'école O'Clock. Cet exercice a pour but de pratiquer le HTML et le CSS vanilla.
 
-## ![Logo HTML 5](image-2.png) HTML 5
+## ![Logo HTML 5](./Icons/img-html.png) HTML 5
 
 ### Appel à une police tiers
 
@@ -19,7 +19,7 @@ Une structure pertinente et claire offre plusieurs avantages parmi lequels :
 
 L'utilisation d'un formulaire avec ces labels, input, select, etc est un incontournable dans le web moderne.
 
-## ![alt text](image-3.png) CSS 3
+## ![Logo CSS 3](./Icons/img-css.png) CSS 3
 
 ### Utilisation d'un reset CSS
 
@@ -43,9 +43,13 @@ Dans cet exercice, l'objectif est de faire apparaître un texte supplémentaire 
 
 #### Utilisation de media queries (mobile, tablette et desktop)
 
+![Extrait des media queries utilisées](./images/mediaQueries.png)
+
 Afin de rendre le site lisible sur les différents appareils, 3 media queries ont été utilisés pour convenir aux différents formats d'écrans : une pour les écrans de moins de 767px (orienté mobile), une pour les écrans de 768 à 1023px (orienté tablette) et la dernière pour le format desktop.
 
 #### Utilisation de grid et flexbox
+
+![Exemple de grid et flex sur les services](./images/grid-flex.png)
 
 La flexbox a été utile pour la mise en forme des menus et l'organisation en colonne sur le format mobile.
 L'utilisation de la grid a permis une mise en page originale pour la section services au format desktop, et adaptative au format d'écran en cours pour garder une qualité de lecture au plus juste.
