@@ -2,6 +2,8 @@
 
 Heros league est un projet réalisé durant ma formation à l'école O'Clock. Cet exercice a pour but de pratiquer le HTML et le CSS vanilla.
 
+![Aperçu du site version desktop](./images/desktop.png)
+
 ## ![Logo HTML 5](./Icons/img-html.png) HTML 5
 
 ### Appel à une police tiers
